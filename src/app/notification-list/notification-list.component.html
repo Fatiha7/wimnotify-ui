@@ -1,0 +1,18 @@
+  <table class="table table-striped">
+    <thead>
+      <tr class="text-center">
+        <th></th>
+        <th>ID</th>
+        <th>Notification</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text-center" *ngFor= "let notification of notifications">
+        <td></td>
+        <td>{{ notification.id }}</td>
+        <td>{{ notification.notification }}</td>
+        <td><button (click)="updatenotification(notification.id)" class="btn h-6 btn-dark">Update</button > <button (click)="deletenotification(notification.id)" class=" ml-4 h-6 btn btn-dark">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
